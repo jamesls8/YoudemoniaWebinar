@@ -17,6 +17,12 @@ public class Email {
 
     public String constructEmail(Recipient r)
     {
+        //header
+        String emailAdress = r.getEmail() + "\n\n";
+        String horizontalLine = "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n";
+
+
+
         String greeting;
         if (r.isMale())
             greeting = "Dear Mr. " + r.getLastName() + ",\n\n"; 
@@ -52,7 +58,7 @@ public class Email {
         + "www.youdemonia.org";
 
 
-        String email = greeting + para1 + para2 + para3 + closing;
+        String email = emailAdress + horizontalLine + greeting + para1 + para2 + para3 + closing;
 
         return email;
     }
