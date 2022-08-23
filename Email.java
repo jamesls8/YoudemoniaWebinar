@@ -18,7 +18,7 @@ public class Email {
     public String constructEmail(Recipient r)
     {
         //header
-        String emailAdress = r.getEmail() + "\n\n";
+        String emailAdress = r.getEmail() + "\n\n" + "Webinar ; Opportunity For Collaboration" + "\n\n";
         String horizontalLine = "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n";
 
 
